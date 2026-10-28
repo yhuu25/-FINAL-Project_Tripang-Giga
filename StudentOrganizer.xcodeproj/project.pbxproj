@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8CD57B5C30918DA900451960 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD57B5B30918DA900451960 /* CoreDataStack.swift */; };
+		8CD57B5E30918DE800451960 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD57B5D30918DE800451960 /* Helpers.swift */; };
+		8CEA3086308856A500B8FFFF /* StudentOrganizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA3084308856A500B8FFFF /* StudentOrganizer.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		8CD57B5B30918DA900451960 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		8CD57B5D30918DE800451960 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		8CEA306C3088549800B8FFFF /* StudentOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CEA3085308856A500B8FFFF /* StudentOrganizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudentOrganizer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +54,9 @@
 		8CEA30633088549800B8FFFF = {
 			isa = PBXGroup;
 			children = (
+				8CEA3084308856A500B8FFFF /* StudentOrganizer.xcdatamodeld */,
+				8CD57B5B30918DA900451960 /* CoreDataStack.swift */,
+				8CD57B5D30918DE800451960 /* Helpers.swift */,
 				8CEA306E3088549800B8FFFF /* StudentOrganizer */,
 				8CEA306D3088549800B8FFFF /* Products */,
 			);
@@ -132,6 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD57B5C30918DA900451960 /* CoreDataStack.swift in Sources */,
+				8CD57B5E30918DE800451960 /* Helpers.swift in Sources */,
+				8CEA3086308856A500B8FFFF /* StudentOrganizer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +165,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,12 +176,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tropanggiga.StudentOrganizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -181,8 +199,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -191,12 +210,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tropanggiga.StudentOrganizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +362,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8CEA3084308856A500B8FFFF /* StudentOrganizer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8CEA3085308856A500B8FFFF /* StudentOrganizer.xcdatamodel */,
+			);
+			currentVersion = 8CEA3085308856A500B8FFFF /* StudentOrganizer.xcdatamodel */;
+			path = StudentOrganizer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8CEA30643088549800B8FFFF /* Project object */;
 }
